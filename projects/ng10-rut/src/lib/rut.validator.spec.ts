@@ -13,23 +13,23 @@ describe('RutValidator: ReactiveForms', () => {
     });
   });
 
-  let rutValidator: RutValidator = new RutValidator();
+  const rutValidator: RutValidator = new RutValidator();
 
   it('should parse valid RUTs as valid', () => {
-    let rutControl: FormControl = new FormControl();
+    const rutControl: FormControl = new FormControl();
     rutControl.setValue('7.618.285-K');
     expect(rutValidator.validate(rutControl)).toBeNull();
   });
 
   it('should parse invalid RUTs as invalid', () => {
-    let rutControl: FormControl = new FormControl();
+    const rutControl: FormControl = new FormControl();
     rutControl.setValue('1.111.111-1');
-    let result: any = rutValidator.validate(rutControl);
+    const result: any = rutValidator.validate(rutControl);
     expect(result.invalidRut).toBe(true);
   });
 
   it('should parse valid RUTs without formatting as valid', () => {
-    let rutControl: FormControl = new FormControl();
+    const rutControl: FormControl = new FormControl();
     rutControl.setValue('7618285K');
     expect(rutValidator.validate(rutControl)).toBeNull();
   });

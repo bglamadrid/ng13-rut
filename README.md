@@ -1,44 +1,42 @@
-Angular 9 RUT
+Angular 10 RUT
 =============
 
-Fork de https://github.com/platanus/ng2-rut para funcionar bajo Angular 9 debido a librerías deprecadas.
+Forked from https://github.com/landscapedotcl/ng9-rut to work with Angular 10.
 
-Angular 9 library with several components to handle [Chilean RUT](https://en.wikipedia.org/wiki/National_identification_number#Chile) validation, cleaning and formatting.
+Angular 10 library with several components to handle [Chilean RUT](https://en.wikipedia.org/wiki/National_identification_number#Chile) validation, cleaning and formatting.
 
 ## Installation
 
 ```bash
-yarn add ng9-rut
+yarn add ng10-rut
 # or
-npm install ng9-rut --save
+npm install ng10-rut --save
 ```
 
 ## Usage
 
 ### Set-up:
 
-The easiest way to use this library is to import Ng2Rut in your app's main module.
+The easiest way to use this library is to import Ng10Rut in your app's main module.
 
 ```typescript
 import { NgModule } from '@angular/core';
-import { Ng9RutModule } from 'ng9-rut';
+import { Ng10RutModule } from 'ng10-rut';
 import { BrowserModule } from '@angular/platform-browser';
 
 @NgModule({
   ...
   imports: [
     BrowserModule,
-    Ng9RutModule
+    Ng10RutModule
   ],
 })
 class DemoAppModule { }
 ```
 
-See `./demo` folder for a fully working example.
-
 ### Using it:
 
-ng9-rut exposes multiple features that can be used to perform input validation and formatting. Probably you want to use one of the following:
+ng10-rut exposes multiple features that can be used to perform input validation and formatting. Probably you want to use one of the following:
 
 - `RutValidator`: Exposes the `validateRut` directive (to attach to models or inputs) and the RutValidator class to be used as `Validator` on reactive forms.
 - `RutPipe`: Exposes the `RutPipe` pipe to format rut numbers on templates
@@ -50,7 +48,7 @@ ng9-rut exposes multiple features that can be used to perform input validation a
 
 ```typescript
 import { FormGroup, FormBuilder, Validators, FormControl } from '@angular/forms';
-import { RutValidator } from 'ng9-rut';
+import { RutValidator } from 'ng10-rut';
 export class DemoAppComponent {
   constructor (fb: FormBuilder, rutValidator: RutValidator) {
     this.reactiveForm = fb.group({
@@ -97,7 +95,7 @@ export class DemoAppComponent {
 
 ## Credits
 
-Esta lib fue actualizada en base al proyecto de los chicos de platanus.
+The original lib was created based on Platanus lib:
 https://github.com/platanus/ng2-rut
 
 ## License

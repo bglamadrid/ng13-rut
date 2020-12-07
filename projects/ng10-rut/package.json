@@ -1,0 +1,12 @@
+{
+  "name": "ng10-rut",
+  "version": "1.0.0",
+  "dependencies": {
+    "rut-helpers": "0.1.1",
+    "tslib": "2.0.3"
+  },
+  "peerDependencies": {
+    "@angular/common": "10.1.5",
+    "@angular/core": "10.1.5"
+  }
+}

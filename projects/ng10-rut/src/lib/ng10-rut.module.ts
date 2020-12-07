@@ -23,4 +23,4 @@ import { RutValueAccessor } from './rut-value-accessor';
     RutValueAccessor,
   ],
 })
-export class Ng9RutModule { }
+export class Ng10RutModule { }
