@@ -2,7 +2,7 @@ import { TestBed } from '@angular/core/testing';
 
 import { Ng10RutService } from './ng10-rut.service';
 
-describe('Ng9RutService', () => {
+describe('Ng10RutService', () => {
   let service: Ng10RutService;
 
   beforeEach(() => {
