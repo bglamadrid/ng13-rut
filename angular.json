@@ -27,6 +27,13 @@
             "main": "projects/ng10-rut/src/test.ts",
             "tsConfig": "projects/ng10-rut/tsconfig.spec.json",
             "karmaConfig": "projects/ng10-rut/karma.conf.js"
+          },
+          "configurations": {
+            "ci": {
+              "watch": false,
+              "progress": false,
+              "browsers": "ChromeHeadlessCI"
+            }
           }
         },
         "lint": {
