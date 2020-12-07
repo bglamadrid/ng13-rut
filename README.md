@@ -17,7 +17,7 @@ npm install ng10-rut --save
 
 ### Set-up:
 
-The easiest way to use this library is to import Ng2Rut in your app's main module.
+The easiest way to use this library is to import Ng10Rut in your app's main module.
 
 ```typescript
 import { NgModule } from '@angular/core';
@@ -34,11 +34,9 @@ import { BrowserModule } from '@angular/platform-browser';
 class DemoAppModule { }
 ```
 
-See `./demo` folder for a fully working example.
-
 ### Using it:
 
-ng9-rut exposes multiple features that can be used to perform input validation and formatting. Probably you want to use one of the following:
+ng10-rut exposes multiple features that can be used to perform input validation and formatting. Probably you want to use one of the following:
 
 - `RutValidator`: Exposes the `validateRut` directive (to attach to models or inputs) and the RutValidator class to be used as `Validator` on reactive forms.
 - `RutPipe`: Exposes the `RutPipe` pipe to format rut numbers on templates
