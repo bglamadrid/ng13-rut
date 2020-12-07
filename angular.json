@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ng9-rut": {
+    "ng10-rut": {
       "projectType": "library",
       "root": "projects/ng10-rut",
       "sourceRoot": "projects/ng10-rut/src",
@@ -24,17 +24,17 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/ng9-rut/src/test.ts",
-            "tsConfig": "projects/ng9-rut/tsconfig.spec.json",
-            "karmaConfig": "projects/ng9-rut/karma.conf.js"
+            "main": "projects/ng10-rut/src/test.ts",
+            "tsConfig": "projects/ng10-rut/tsconfig.spec.json",
+            "karmaConfig": "projects/ng10-rut/karma.conf.js"
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "projects/ng9-rut/tsconfig.lib.json",
-              "projects/ng9-rut/tsconfig.spec.json"
+              "projects/ng10-rut/tsconfig.lib.json",
+              "projects/ng10-rut/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**"

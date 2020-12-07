@@ -21,14 +21,14 @@ The easiest way to use this library is to import Ng10Rut in your app's main modu
 
 ```typescript
 import { NgModule } from '@angular/core';
-import { Ng9RutModule } from 'ng10-rut';
+import { Ng10RutModule } from 'ng10-rut';
 import { BrowserModule } from '@angular/platform-browser';
 
 @NgModule({
   ...
   imports: [
     BrowserModule,
-    Ng9RutModule
+    Ng10RutModule
   ],
 })
 class DemoAppModule { }
