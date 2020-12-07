@@ -5,19 +5,19 @@
   "projects": {
     "ng9-rut": {
       "projectType": "library",
-      "root": "projects/ng9-rut",
-      "sourceRoot": "projects/ng9-rut/src",
+      "root": "projects/ng10-rut",
+      "sourceRoot": "projects/ng10-rut/src",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
           "options": {
-            "tsConfig": "projects/ng9-rut/tsconfig.lib.json",
-            "project": "projects/ng9-rut/ng-package.json"
+            "tsConfig": "projects/ng10-rut/tsconfig.lib.json",
+            "project": "projects/ng10-rut/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/ng9-rut/tsconfig.lib.prod.json"
+              "tsConfig": "projects/ng10-rut/tsconfig.lib.prod.json"
             }
           }
         },
@@ -43,8 +43,5 @@
         }
       }
     }},
-  "cli": {
-    "analytics": "109706c9-b2fb-47b5-b181-604f614934b3"
-  },
-  "defaultProject": "ng9-rut"
+  "defaultProject": "ng10-rut"
 }

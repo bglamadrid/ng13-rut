@@ -1,6 +1,6 @@
 {
-  "name": "ng9-rut",
-  "version": "0.0.6",
+  "name": "ng10-rut",
+  "version": "1.0.0",
   "dependencies": {
     "rut-helpers": "0.1.0"
   },
