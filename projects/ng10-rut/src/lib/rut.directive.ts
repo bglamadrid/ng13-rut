@@ -17,17 +17,17 @@ export class RutDirective {
   }
 
   public onFocus(ev: Event) {
-    let htmlInputElement: HTMLInputElement = <HTMLInputElement> ev.target;
+    const htmlInputElement: HTMLInputElement = ev.target as HTMLInputElement;
     htmlInputElement.value = rutHelpers.rutClean(htmlInputElement.value);
   }
 
   public onBlur(ev: Event) {
-    let htmlInputElement: HTMLInputElement = <HTMLInputElement> ev.target;
+    const htmlInputElement: HTMLInputElement = ev.target as HTMLInputElement;
     htmlInputElement.value = rutHelpers.rutFormat(htmlInputElement.value) || '';
   }
 
   public onChange(ev: Event) {
-    let htmlInputElement: HTMLInputElement = <HTMLInputElement> ev.target;
+    const htmlInputElement: HTMLInputElement = ev.target as HTMLInputElement;
     this.rutChange.emit(rutHelpers.rutClean(htmlInputElement.value));
   }
 }
