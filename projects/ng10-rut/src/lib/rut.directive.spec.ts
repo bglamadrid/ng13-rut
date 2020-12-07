@@ -27,7 +27,7 @@ describe('RutDirective', () => {
   });
 
   it('should format on blur', () => {
-    let nativeInput: HTMLInputElement = input.nativeElement;
+    const nativeInput: HTMLInputElement = input.nativeElement;
     nativeInput.value = '7618285K';
     nativeInput.dispatchEvent(newEvent('blur'));
     fixture.detectChanges();
@@ -35,7 +35,7 @@ describe('RutDirective', () => {
   });
 
   it('should clear formatting on focus', () => {
-    let nativeInput: HTMLInputElement = input.nativeElement;
+    const nativeInput: HTMLInputElement = input.nativeElement;
     nativeInput.value = '7.618.285-K';
     nativeInput.dispatchEvent(newEvent('focus'));
     fixture.detectChanges();

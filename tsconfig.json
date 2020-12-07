@@ -16,9 +16,9 @@
       "dom"
     ],
     "paths": {
-      "ng9-rut": [
-        "dist/ng9-rut/ng9-rut",
-        "dist/ng9-rut"
+      "ng10-rut": [
+        "dist/ng10-rut/ng10-rut",
+        "dist/ng10-rut"
       ]
     }
   },
