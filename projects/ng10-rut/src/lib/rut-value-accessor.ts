@@ -1,8 +1,10 @@
-import { Directive, forwardRef } from '@angular/core';
+import { Directive, forwardRef, HostListener } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 import { rutFormat } from 'rut-helpers';
 
 import { ElementRef, Renderer2 } from '@angular/core';
+
+/* tslint:disable:directive-selector directive-class-suffix */
 
 const RUT_VALUE_ACCESSOR: any = {
   provide: NG_VALUE_ACCESSOR,
@@ -12,10 +14,6 @@ const RUT_VALUE_ACCESSOR: any = {
 
 @Directive({
   selector: 'input[formatRut]',
-  host: {
-    '(rutChange)': 'onChange($event)',
-    '(blur)': 'onTouched($event)',
-  },
   providers: [RUT_VALUE_ACCESSOR],
 })
 export class RutValueAccessor implements ControlValueAccessor {
@@ -24,8 +22,11 @@ export class RutValueAccessor implements ControlValueAccessor {
     private elementRef: ElementRef,
     ) { }
 
-  public onChange: any = (_) => { /*Empty*/ };
-  public onTouched: any = () => { /*Empty*/ };
+  @HostListener('rutChange', ['$event'])
+  public onChange: any = (_) => { /*Empty*/ }
+
+  @HostListener('blur', ['$event'])
+  public onTouched: any = () => { /*Empty*/ }
 
   public writeValue(value: any): void {
     const normalizedValue: string = rutFormat(value) || '';

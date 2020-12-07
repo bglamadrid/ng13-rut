@@ -2,9 +2,12 @@ import { Directive, forwardRef } from '@angular/core';
 import { NG_VALIDATORS, FormControl } from '@angular/forms';
 import { rutValidate } from 'rut-helpers';
 
-export function validateRutFactory(rutValidate: Function) {
+/* tslint:disable:directive-selector directive-class-suffix */
+
+// tslint:disable-next-line:ban-types
+export function validateRutFactory(rutValidateFn: Function) {
   return (c: FormControl) => {
-    return rutValidate(c.value) ? null : { invalidRut: true };
+    return rutValidateFn(c.value) ? null : { invalidRut: true };
   };
 }
 
@@ -15,6 +18,7 @@ export function validateRutFactory(rutValidate: Function) {
   ],
 })
 export class RutValidator {
+  // tslint:disable-next-line:ban-types
   private validator: Function;
 
   constructor() {
