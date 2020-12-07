@@ -1,5 +1,5 @@
 /*
- * Public API Surface of ng9-rut
+ * Public API Surface of ng10-rut
  */
 
 export * from './lib/ng10-rut.service';
