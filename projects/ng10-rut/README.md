@@ -1,7 +1,7 @@
 Angular 10 RUT
 =============
 
-![npm](https://img.shields.io/npm/v/ng10-rut) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/HeyPay/ng10-rut/blob/master/LICENSE)
+[![npm](https://www.npmjs.com/package/ng10-rut)](https://img.shields.io/npm/v/ng10-rut) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/HeyPay/ng10-rut/blob/master/LICENSE)
 
 
 Forked from https://github.com/landscapedotcl/ng9-rut to work with Angular 10.
