@@ -13,7 +13,7 @@ jobs:
       - name: Npm Install 
         run: npm install
       - name: Build
-        run: npm prepublish
+        run: npm run prepublish
       - name: Publish to npm
         uses: pascalgn/npm-publish-action@1.3.6
         with:
