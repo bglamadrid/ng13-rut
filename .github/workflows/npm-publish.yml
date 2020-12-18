@@ -4,20 +4,18 @@ on:
     branches:
       - develop
 jobs:
-  npm-publish:
+  build:
     name: npm-publish
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
-      - name: Npm Install 
+      - name: Install 
         run: npm install
       - name: Build
-        run: npm run prepublish
-      - name: Publish to npm
-        uses: pascalgn/npm-publish-action@1.3.6
-        with:
-          publish_command: "npm"
+        run: npm run build:prod
+      - name: Publish
+        working-directory: ./dist/ng10-rut
+        run: npm publish
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
