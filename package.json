@@ -2,6 +2,7 @@
   "name": "ng10-rut",
   "version": "1.0.0",
   "homepage": "https://github.com/HeyPay/ng10-rut#README.md",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/HeyPay/ng10-rut/issues"
   },
