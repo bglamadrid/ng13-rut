@@ -11,7 +11,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
       - name: Npm Install 
-        - run: npm install
+        run: npm install
       - name: Publish to npm
         uses: pascalgn/npm-publish-action@1.3.6
         with:
