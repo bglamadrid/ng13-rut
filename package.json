@@ -19,7 +19,8 @@
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
-    "lint": "ng lint"
+    "lint": "ng lint",
+    "prepublish": "ng build --prod"
   },
   "whitelistedNonPeerDependencies": [
     "rut-helpers"
