@@ -1,6 +1,19 @@
 {
   "name": "ng10-rut",
-  "version": "1.0.3",
+  "version": "1.0.4",
+  "homepage": "https://github.com/HeyPay/ng10-rut#README.md",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HeyPay/ng10-rut/issues"
+  },
+  "author": {
+    "name": "Nesto",
+    "url": "https://nesto.cl"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HeyPay/ng10-rut.git"
+  },
   "dependencies": {
     "rut-helpers": "0.1.1",
     "tslib": "2.0.3"

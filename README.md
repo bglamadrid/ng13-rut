@@ -1,6 +1,9 @@
 Angular 10 RUT
 =============
 
+[![npm](https://www.npmjs.com/package/ng10-rut)](https://img.shields.io/npm/v/ng10-rut) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/HeyPay/ng10-rut/blob/master/LICENSE)
+
+
 Forked from https://github.com/landscapedotcl/ng9-rut to work with Angular 10.
 
 Angular 10 library with several components to handle [Chilean RUT](https://en.wikipedia.org/wiki/National_identification_number#Chile) validation, cleaning and formatting.
@@ -100,4 +103,4 @@ https://github.com/platanus/ng2-rut
 
 ## License
 
-Angular 2 RUT is © 2016 Platanus, spa. It is free software and may be redistributed under the terms specified in the LICENSE file.
+Based on Angular 2 RUT by Platanus. Angular 2 RUT is © 2016 Platanus, spa. It is free software and may be redistributed under the terms specified in the LICENSE file.
