@@ -1,6 +1,15 @@
 {
   "name": "ng13-rut",
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "homepage": "https://github.com/bglamadrid/ng13-rut#README.md",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bglamadrid/ng13-rut/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bglamadrid/ng13-rut.git"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
