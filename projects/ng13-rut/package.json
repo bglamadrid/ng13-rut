@@ -1,11 +1,21 @@
 {
   "name": "ng13-rut",
-  "version": "0.0.1",
+  "version": "0.0.0",
+  "homepage": "https://github.com/bglamadrid/ng13-rut#README.md",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bglamadrid/ng13-rut/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bglamadrid/ng13-rut.git"
+  },
   "peerDependencies": {
     "@angular/common": "^13.1.0",
     "@angular/core": "^13.1.0"
   },
   "dependencies": {
-    "tslib": "^2.3.0"
+    "tslib": "^2.3.0",
+    "rut-helpers": "0.1.1"
   }
 }

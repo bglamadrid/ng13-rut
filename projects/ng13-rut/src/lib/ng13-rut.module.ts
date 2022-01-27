@@ -1,16 +1,24 @@
 import { NgModule } from '@angular/core';
-import { Ng13RutComponent } from './ng13-rut.component';
-
-
+import { RutValueAccessor } from './rut-value-accessor';
+import { RutDirective } from './rut.directive';
+import { RutPipe } from './rut.pipe';
+import { RutValidator } from './rut.validator';
 
 @NgModule({
   declarations: [
-    Ng13RutComponent
+    RutPipe,
+    RutDirective,
+    RutValidator,
+    RutValueAccessor
   ],
-  imports: [
+  providers: [
+    RutValidator
   ],
   exports: [
-    Ng13RutComponent
+    RutPipe,
+    RutDirective,
+    RutValidator,
+    RutValueAccessor
   ]
 })
 export class Ng13RutModule { }
