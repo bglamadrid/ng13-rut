@@ -1,7 +1,7 @@
 # Angular 13 RUT
 =============
 
-[![npm](https://www.npmjs.com/package/ng13-rut)](https://img.shields.io/npm/v/ng13-rut)
+[![npm](https://img.shields.io/npm/v/ng13-rut)](https://www.npmjs.com/package/ng13-rut)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/bglamadrid/ng13-rut/blob/master/LICENSE)
 
 
