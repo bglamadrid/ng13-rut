@@ -21,7 +21,7 @@ npm install ng13-rut --save
 
 ### Set-up:
 
-The easiest way to use this library is to import Ng13Rut in your app's main module.
+The easiest way to use this library is to import `Ng13RutModule` in your app's main module.
 
 ```typescript
 import { NgModule } from '@angular/core';
